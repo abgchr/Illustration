@@ -59,7 +59,7 @@ a {
 
 h1 {
   font-size: 50px;
-  font-family: CatCAfe;
+  font-family: Avenir-Roman;
   text-transform: uppercase;
   line-height: 55px;
   text-align: center;
@@ -70,7 +70,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: CatCafe;
+  font-family: Avenir-Roman;
   text-transform: uppercase;
   text-align: center;
   line-height: 0px;
@@ -80,7 +80,7 @@ h2 {
 
 h3 {
   font-size: 14px;
-  font-family: Avenir-Black;
+  font-family: Avenir-Roman;
   text-align: left;
   padding-bottom: 0px;
   text-transform: uppercase;
