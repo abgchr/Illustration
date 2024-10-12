@@ -1,80 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sketch</title>
+  <title>Kontaktformular</title>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <script src="libraries/p5.min.js"></script>
   <script src="libraries/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
 </head>
 
-<body>
-  <script src="sketch.js"></script>
-  <h1><a href="arbeiten.html">Christina</a>
-    <br>
-    <a href="arbeiten.html">Abgottspon</a>
-  </h1>
-  <h2><a href="arbeiten.html">Illustration</a></h2>
+<header>
+  <h1 class="titel"><a href="index.html">Christina Abgottspon</a></h1>
+  <h2 class="titel"><a href="index.html">Illustration</a></h2>
 
-  <nav class="navbar">
+  <nav class="menu">
     <ul>
       <li><a href="about.html">Über mich</a></li>
-      <li><a href="index">Arbeiten</a></li>
+      <li><a href="index.html">Arbeiten</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
   </nav>
+</header>
 
-  <main>
-    <h3>Kontakt</h3>
-    <p>Sind Sie interessiert an einem Auftrag oder einer Zusammenarbeit?
-      <br> Gerne können Sie mich hier kontaktieren.
-    </p>
-
-
-    <form action="SENDEADRESSE" id="ft-form" method="POST" accept-charset="UTF-8">
-      <fieldset>
-        <label>
-          Name
-          <input type="text" name="Name" required>
-        </label>
-        <label>
-          E-Mail-Adresse
-          <input type="email" name="E-Mail" required>
-        </label>
-        <label>
-          Ihre Nachricht
-          <textarea rows="3" name="Nachricht" required></textarea>
-        </label>
-        <!--<div>
-          <label>
-            <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
-            <span>Ich bin mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung durch <a href="https://form.taxi/de" target="_blank">Form.taxi</a> einverstanden.</span>
-          </label>
-        </div>-->
-      </fieldset>
-      <div class="btns">
-        <input type="text" name="_gotcha" value="" style="display:none;">
-        <input type="submit" value="Absenden">
+<body>
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" methode="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h3 class="titel">Nehmen Sie gerne Kontakt mit mir auf</h2>
+        <hr class="contact-container">
       </div>
+      <input type="hidden" name="access_key" value="afef52ec-7f8b-4aab-b5a4-77edfe46dc04">
+      <input type="text" name="name" placeholder="Ihr Name *" class="contact-input" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail Adresse *" class="contact-input" required>
+      <input type="text" name="telefon" placeholder="Ihre Telefonnummer" class="contact-input">
+      <textarea name="anfrage" placeholder="Ihre Anfrage *" class="contact-input" required></textarea>
+      <button type="submit">SENDEN</button>
+      <p>Die mit einem Stern markierten Felder bitte ausfüllen.</p>
     </form>
-  </main>
-
+    <div class="contact-right">
+      <img src="Bilder/Körbe.jpg">
+    </div>
+  </div>
 </body>
+
 <footer class="footer">
-  <p>© 2024 Christina Abgottspon
-    Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Illustratorin nicht
-    verwendet oder reproduziert werden.</p>
-  <p><a href="mailto:chrisitna.abgottspon@outlook.com">christina.abgottspon@outlook.com</a></p>
-  <p><a href="impressum.html">Impressum</a></p>
-  <p><a href="datenschutz.html">Datenschutz</a></p>
+  <div class="footer-links">
+    <p><a href="mailto:chrisitna.abgottspon@outlook.com">christina.abgottspon @ outlook.com</a></p>
+    <br>
+    <p><a href="impressum.html">Impressum</a></p>
+    <p><a href="datenschutz.html">Datenschutz</a></p>
+  </div>
+  <div class="footer-rechts">© 2024 Christina Abgottspon
+    <br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Illustratorin nicht
+    verwendet oder reproduziert werden.
+  </div>
 </footer>
-
-
 
 
 </html>
