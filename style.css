@@ -238,6 +238,7 @@ nav {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Flexibles Grid mit mindestens 300px pro Spalte */
   gap: 20px;
 }
 
@@ -285,13 +286,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 @media screen and(max-width:800px){
   .slideshow-total{
     grid-template-columns: 1fr;
-    flex-direction: column;
+    /*flex-direction: column;*/
   }
 }
 
@@ -304,14 +305,15 @@ footer {
 .slideshow-container,
 .slideshow-desc {
   width: 100%;
-  max-width: 800px;
-  position: relative;
-  overflow: hidden;
+  /*max-width: 800px;*/
+  /*position: relative;*/
+  /*overflow: hidden;*/
 }
 
 @media screen and (max-width: 800px) {
   .slideshow-desc {
     max-width: 800px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -547,34 +549,32 @@ div.sterntext {
 
 /*ABOUT*/
 div.about {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  /*flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
   padding: 0px;
 }
 
 div.about1 {
-  width: 50%;
   margin: 0;
   text-align: left;
 }
 
 div.about2 {
-  width: 50%;
   margin: 0;
 }
 
 img.about {
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  max-width: 800px;
 }
 
 @media only screen and (max-width: 800px) {
 
   div.about {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   div.about1,
@@ -582,16 +582,8 @@ img.about {
     width: 100%;
     text-align: left;
   }
-
-  /*img.about-img {
-    width: 80%;
-    max-width: 400px;
-  }*/
 }
 
-/*label {
-  font-family: CreatoDisplay-Regular;
-}*/
 
 /*FOOTER*/
 
