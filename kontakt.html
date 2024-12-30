@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontaktformular</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<header>
+  <h2 class="titel"><a href="index.html">Christina Abgottspon</a></h2>
+  <h1 class="titel"><a href="index.html">Illustration</a></h1>
+</header>
+
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="about.html">Über mich</a></li>
+      <li><a href="index.html">Arbeiten</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h3 class="kontakt">Nehmen Sie gerne Kontakt mit mir auf</h3>
+    <div class="kontakt-container">
+      <div class="kontaktformular">
+
+        <form method="POST" class="contact-left" data-netlify="true">
+          <input type="text" name="name" placeholder="Ihr Name *" class="kontaktfeld" required>
+          <input type="email" name="email" placeholder="Ihre E-Mail Adresse *" class="kontaktfeld" required>
+          <input type="tel" name="telefon" placeholder="Ihre Telefonnummer" class="kontaktfeld">
+          <textarea name="anfrage" placeholder="Ihre Anfrage *" class="kontaktfeld" required></textarea>
+          <!--<div class="sterntext">Die mit einem * markierten Felder bitte ausfüllen.</div>-->
+          <div><button type="submit">SENDEN</button></div>
+        </form>
+      </div>
+      <div class="kontaktformular-rechts"><img src="Bilder/koerbe.jpg" class="bild-kontakt"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-links">
+        <p><a href="impressum.html">Impressum</a></p>
+        <p><a href="datenschutz.html">Datenschutz</a></p>
+      </div>
+      <div class="footer-rechts">© 2024 Christina Abgottspon
+        <br><br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Urheberin
+        nicht verwendet oder reproduziert werden.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
