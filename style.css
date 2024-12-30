@@ -238,7 +238,6 @@ nav {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* Flexibles Grid mit mindestens 300px pro Spalte */
   gap: 20px;
 }
 
