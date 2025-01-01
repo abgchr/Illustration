@@ -234,11 +234,9 @@ nav {
   border-radius: 8px;
 }
 
-/* Grid-Layout für die Galerie */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* Flexibles Grid mit mindestens 300px pro Spalte */
   gap: 20px;
 }
 
@@ -253,25 +251,21 @@ nav {
   margin-top: 0px;
 }
 
-/* Sicherstellen, dass die Bilder korrekt angezeigt werden */
 .gallery img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Responsive Anpassungen für kleinere Bildschirmgrößen */
 @media only screen and (max-width: 700px) {
   .gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    /* Kleinere Spaltenbreite bei mittleren Bildschirmen */
   }
 }
 
 @media only screen and (max-width: 500px) {
   .gallery-grid {
     grid-template-columns: 1fr;
-    /* Nur eine Spalte bei kleinen Bildschirmen */
   }
 }
 
@@ -286,13 +280,32 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  /*margin: 0 auto;*/
 }
 
-@media screen and(max-width:800px){
-  .slideshow-total{
+
+@media screen and (max-width: 800px) {
+  .slideshow-total {
+    display: flex;               
+    flex-direction: column;     
+    gap: 1.5rem; 
+    grid-template-columns: 1fr;         
+  }
+
+  .slideshow-container {
+    width: 100%;    
+  }
+
+  .slideshow-desc {
+    width: 100%;                    
+    max-width: 100%;
+    text-align: left;
+    max-width: 800px;
     grid-template-columns: 1fr;
-    /*flex-direction: column;*/
+  }
+
+  .slideshow-container img {
+    width: 100%;      
+    height: auto;
   }
 }
 
@@ -305,27 +318,16 @@ footer {
 .slideshow-container,
 .slideshow-desc {
   width: 100%;
-  /*max-width: 800px;*/
-  /*position: relative;*/
-  /*overflow: hidden;*/
-}
-
-@media screen and (max-width: 800px) {
-  .slideshow-desc {
-    max-width: 800px;
-    grid-template-columns: 1fr;
-  }
 }
 
 .slideshow-container {
-  /*max-width: 800px;*/
+  max-width: 800px;
   position: relative;
   margin: auto;
   overflow: hidden;
   width: 100%;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
   width: 100%;
@@ -352,7 +354,6 @@ footer {
   transition: 0.6s ease;
   user-select: none;
   transform: translateY(-50%);
-  /* Center vertically */
   z-index: 10;
 
 }
@@ -588,7 +589,6 @@ p.schluss{
   padding-bottom: 0.75rem;
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -610,8 +610,11 @@ div.footer-links {
 }
 
 @media (max-width: 800px) {
-
   div.footer {
     grid-template-columns: 1fr;
+    display: flex;               
+    flex-direction: column;   
   }
 }
+
+
