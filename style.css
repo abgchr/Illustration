@@ -42,11 +42,6 @@ header {
 }
 
 @font-face {
-  font-family: CreatoDisplay-Black;
-  src: url(Fonts/CreatoDisplay/CreatoDisplay-Black.otf)
-}
-
-@font-face {
   font-family: CreatoDisplay-Bold;
   src: url(Fonts/CreatoDisplay/CreatoDisplay-Bold.otf)
 }
@@ -54,6 +49,11 @@ header {
 @font-face {
   font-family: CreatoDisplay-ExtraBold;
   src: url(Fonts/CreatoDisplay/CreatoDisplay-ExtraBold.otf)
+}
+
+@font-face {
+  font-family: CreatoDisplay-Black;
+  src: url(Fonts/CreatoDisplay/CreatoDisplay-Black.otf)
 }
 
 h1 {
@@ -100,7 +100,7 @@ h3 {
   margin-top: 0px;
 }
 
-p {
+table, p {
   font-family: CreatoDisplay-Regular;
   font-size: 0.9rem;
   color: var(--farbe3);
@@ -109,17 +109,6 @@ p {
   margin-top: 0px;
   padding-top: 0px;
 }
-
-pre {
-  font-family: CreatoDisplay-Regular;
-  font-size: 0.9rem;
-  color: var(--farbe3);
-  padding: 0px;
-  margin: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
 a {
   color: var(--farbe3);
   text-decoration: none;
@@ -587,6 +576,26 @@ img.about {
 
 p.schluss{
   padding-bottom: 0.75rem;
+}
+
+td.bold{font-family: CreatoDisplay-Bold;}
+
+td.unten{
+  padding-bottom: 8px;
+}
+
+table {
+  line-height: 1;
+  border-collapse: collapse;
+  }
+
+  table td:nth-child(1) {
+    padding-right: 15px;
+  }
+
+table td {
+  padding: 0;
+  margin: 0;
 }
 
 /*FOOTER*/
