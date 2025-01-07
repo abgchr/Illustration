@@ -13,8 +13,8 @@ body {
   margin: 0px;
   padding: 0px;
   min-height: 100%;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -280,7 +280,7 @@ nav {
 
 main,
 footer {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 /*SLIDESHOW*/
@@ -440,7 +440,7 @@ h3.kontakt {
 .kontakt-container {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   align-items: flex-start;
 }
 
@@ -626,6 +626,7 @@ td{
 
 footer {
   background-color: var(--farbe2);
+  margin-top: 0px;
 }
 
 div.footer {
