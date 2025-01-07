@@ -94,7 +94,7 @@ h3 {
   font-family: CreatoDisplay-Bold;
   text-transform: uppercase;
   color: var(--farbe3);
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   margin-bottom: 0px;
   padding-top: 0px;
   margin-top: 0px;
@@ -288,7 +288,8 @@ footer {
 .slideshow-total {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
+  justify-items: center; /*raustun wenn ich nicht zentriert haben möchte*/
 }
 
 
@@ -308,7 +309,7 @@ footer {
     width: 100%;                    
     max-width: 100%;
     text-align: left;
-    max-width: 800px;
+    max-width: 800px !important;
     grid-template-columns: 1fr;
   }
 
@@ -322,6 +323,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 600px;
 }
 
 .slideshow-container,
@@ -440,7 +442,7 @@ h3.kontakt {
 .kontakt-container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 2rem;
   align-items: flex-start;
 }
 
@@ -561,24 +563,28 @@ div.sterntext {
 div.about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5px;
+  gap: 2rem;
   padding: 0px;
+  /*justify-items: center; /*raustun wenn ich nicht zentriert haben möchte*/
 }
 
 div.about1 {
   margin: 0;
   text-align: left;
+  /*max-width: 400px; /*raustun wenn breite nicht max sein soll*/
 }
 
 div.about2 {
   margin: 0;
+  display: grid;
+  justify-items: center;
 }
 
 img.about {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  max-width: 800px;
+  /*max-width: 400px; /*raustun wenn breite nicht max sein soll*/
 }
 
 @media only screen and (max-width: 800px) {
@@ -596,6 +602,10 @@ img.about {
 
 p.schluss{
   padding-bottom: 0.75rem;
+}
+
+td {
+  min-width: 130px;
 }
 
 td.bold{font-family: CreatoDisplay-Bold;}
@@ -648,5 +658,6 @@ div.footer-links {
     flex-direction: column;   
   }
 }
+
 
 
