@@ -70,7 +70,7 @@ h1.titel {
 padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 0px;
-margin-bottom: 5px;
+margin-bottom: 0px;
 }
 
 h2 {
@@ -116,44 +116,6 @@ a {
 
 /*MENU----------------------------------------------*/
 
-/*nav {
-  position: sticky;
-  top: 0;
-  margin-bottom: 20px;
-  z-index: 10;
-}
-
-.menu ul {
-  list-style-type: none;
-  background-color: var(--farbe3);
-  text-align: center;
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-  padding-left: 0px;
-  margin-top: 0px;
-  width: 100%;
-}
-
-.menu a {
-  font-family: CreatoDisplay-Bold;
-  text-decoration: none;
-  color: var(--farbe1);
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  padding: 0.rem;
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-}
-
-.menu li {
-  display: inline;
-}
-
-.menu a:hover {
-  background-color: var(--farbe1);
-  color: var(--farbe3);
-}*/
-
 nav {
   position: sticky;
   top: 0;
@@ -163,13 +125,10 @@ nav {
 
 .menu ul {
   list-style-type: none;
-  background-color: var(--farbe3);
+  /*background-color: var(--farbe3);*/
   text-align: center;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-left: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  padding: 8px 0;
+  margin: 0;
   width: 100%;
   justify-content: center;
   line-height: 15px;
@@ -178,29 +137,26 @@ nav {
 .menu a {
   font-family: CreatoDisplay-Bold;
   text-decoration: none;
-  color: var(--farbe1);
+  color: var(--farbe3);
   text-transform: uppercase;
   font-size: 14px;
-  margin: 0px;
-  line-height: 15px;
-  padding-left: 12.7px;
-  padding-right: 12.7px;
+  margin: 0;
+  padding: 8px 12.7px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu li {
-  display: inline;
-
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .menu a:hover {
-  background-color: var(--farbe1);
-  color: var(--farbe3);
-  line-height: 15px;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  border: none
+  background-color: var(--farbe3);
+  color: var(--farbe1);
+  padding: 8px 12.7px;
+  border-radius: 50px;
 }
-
 
 
 /*GALERIE*/
@@ -289,6 +245,10 @@ footer {
   padding-bottom: 10px;
 }*/
 
+h3.slideshow-zu-portfolio{
+  padding-top: 20px;
+}
+
 .slideshow-total {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -327,12 +287,6 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-}
-
-.slideshow-desc h3, .slideshow-desc p {
-  margin: 0 !important;
-  padding: 0 !important;
-  
 }
 
 .slideshow-container,
@@ -391,7 +345,7 @@ footer {
 .next:hover {
   background-color: var(--farbe2);
   opacity: 0.7;
-  color: var(--farbe1);
+  color: var(--farbe3);
 }
 
 
@@ -411,18 +365,20 @@ footer {
   width: 15px;
   margin: 0 2px;
   background-color: var(--farbe3);
-  
+  transition: opacity 0.3s ease;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
   opacity: 0.7;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
+
 .active,
 .dot:hover {
-  background-color: var(--farbe3);
+  background-color: var(--farbe1);
+  opacity: 0.5;
 }
 
 /* Fading animation */
