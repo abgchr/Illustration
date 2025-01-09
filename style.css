@@ -19,9 +19,9 @@ body {
 }
 
 :root {
-  --farbe1: rgb(254, 251, 243);
-  --farbe2: rgb(255, 218, 124);
-  --farbe3: rgb(18, 11, 41);
+  --farbe1: rgb(255, 255, 255);
+  --farbe2: rgb(255, 255, 255);
+  --farbe3: rgb(9, 5, 21);
 }
 
 /*HEADER*/
@@ -247,7 +247,7 @@ nav {
 }
 
 
-/*4 Bilder in einer Reihe*/
+/*-----------4 Bilder in einer Reihe---------------*/
 /*@media only screen and (max-width: 700px) {
   .gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -284,6 +284,10 @@ footer {
 }
 
 /*SLIDESHOW*/
+
+/*p.beschreibung{
+  padding-bottom: 10px;
+}*/
 
 .slideshow-total {
   display: grid;
@@ -322,8 +326,13 @@ footer {
 .slideshow-desc {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   max-width: 600px;
+}
+
+.slideshow-desc h3, .slideshow-desc p {
+  margin: 0 !important;
+  padding: 0 !important;
+  
 }
 
 .slideshow-container,
@@ -401,7 +410,8 @@ footer {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: var(--farbe1);
+  background-color: var(--farbe3);
+  
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -501,7 +511,7 @@ h3.kontakt {
   width: 100%;
   max-width: 800px;
   height: 50px;
-  border: 2px solid var(--farbe1);
+  border: 1px solid var(--farbe3);
   outline: none;
   padding-left: 25px;
   background-color: var(--farbe1);
@@ -520,11 +530,13 @@ h3.kontakt {
 
 .contact-left textarea:focus {
   border-color: var(--farbe3);
+  border: 2px solid var(--farbe3);
   outline: none;
 }
 
 input.kontaktfeld:focus {
   border-color: var(--farbe3);
+  border: 2px solid var(--farbe3);
 }
 
 .kontaktfeld::placeholder {
@@ -584,7 +596,7 @@ img.about {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /*max-width: 400px; /*raustun wenn breite nicht max sein soll*/
+  max-width: 50vh; 
 }
 
 @media only screen and (max-width: 800px) {
