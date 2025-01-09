@@ -22,6 +22,7 @@ body {
   --farbe1: rgb(255, 255, 255);
   --farbe2: rgb(255, 255, 255);
   --farbe3: rgb(9, 5, 21);
+  --orange: (200, 200, 200)
 }
 
 /*HEADER*/
@@ -114,13 +115,20 @@ a {
   text-decoration: none;
 }
 
-main,
+main{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+}
+
 footer {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
 
 @media only screen and (max-width: 500px) {
   main,
@@ -184,7 +192,7 @@ nav {
   margin-bottom: 0.8rem;
   transition: opacity 0.3s ease;
   padding: 0px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .gallery:hover {
@@ -194,13 +202,14 @@ nav {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  border: 0.5px solid var(--farbe3); 
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 1rem;
 }
 
 .desc {
@@ -485,7 +494,7 @@ h3.kontakt {
   width: 100%;
   max-width: 800px;
   height: 50px;
-  border: 1px solid var(--farbe3);
+  border: 0.5px solid var(--farbe3);
   outline: none;
   padding-left: 25px;
   background-color: var(--farbe1);
@@ -504,13 +513,13 @@ h3.kontakt {
 
 .contact-left textarea:focus {
   border-color: var(--farbe3);
-  border: 2px solid var(--farbe3);
+  border: 1.5px solid var(--farbe3);
   outline: none;
 }
 
 input.kontaktfeld:focus {
   border-color: var(--farbe3);
-  border: 2px solid var(--farbe3);
+  border: 1.5px solid var(--farbe3);
 }
 
 .kontaktfeld::placeholder {
@@ -529,12 +538,15 @@ input.kontaktfeld:focus {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 15px;
+    border: 0.5px solid var(--farbe3);
 }
 
 .contact-left button:hover {
   background: var(--farbe2);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: var(--farbe3);
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
   /* Sanfter Schatten */
+  border: 0.5px solid var(--farbe3);
 }
 
 div.sterntext {
@@ -644,6 +656,4 @@ div.footer-links {
     flex-direction: column;   
   }
 }
-
-
 
