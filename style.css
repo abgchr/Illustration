@@ -128,7 +128,7 @@ a {
 main {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 0.3rem;
+  padding-top: 0.6rem;
   padding-bottom: 1rem;
 }
 
@@ -144,7 +144,7 @@ footer {
   main {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 0.3rem;
+    padding-top: 0.6rem;
     padding-bottom: 1rem;
   }
 
@@ -167,9 +167,9 @@ nav {
 
 .menu ul {
   list-style-type: none;
-  /*background-color: var(--farbe1);*/
+  background-color: var(--farbe1);
   text-align: center;
-  padding: 8px 0;
+  padding: 4px 0;
   margin: 0;
   width: 100%;
   justify-content: center;
