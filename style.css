@@ -628,6 +628,8 @@ td {
 
 td.bold {
   font-family: CreatoDisplay-Bold;
+  word-wrap: break-word;
+  /* Verhindert zu lange Wörter */
 }
 
 td.unten {
@@ -638,21 +640,29 @@ table {
   line-height: 1;
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
+  /* Verhindert, dass die Tabelle zu breit wird */
+
 }
 
 table td:nth-child(1) {
   padding-right: 15px;
+  width: 140px;
 }
 
 table td {
   padding: 0;
   margin: 0;
-  white-space: nowrap; 
+  white-space: normal;
+  /*vorher: nowrap*/
+  overflow: hidden;
 }
 
 td {
   white-space: nowrap;
 }
+
+
 
 /*FOOTER*/
 
@@ -680,3 +690,4 @@ div.footer-links {
     flex-direction: column;
   }
 }
+
