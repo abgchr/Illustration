@@ -280,7 +280,7 @@ h3.slideshow-zu-portfolio {
   width: 100%;
 }
 
-.slideshow-container {
+.slideshow-links {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 20px;
@@ -292,18 +292,19 @@ h3.slideshow-zu-portfolio {
   max-width: 800px;
 }
 
-.slide-desc {
-  display: none;
-}
-
-.slideshow-desc {
+.slideshow-rechts {
   display: flex;
   flex-direction: column;
   max-width: 600px;
 }
 
-.slideshow-container,
-.slideshow-desc {
+.slide-desc {
+  display: none;
+}
+
+
+.slideshow-links,
+.slideshow-rechts {
   width: 100%;
 }
 
@@ -317,7 +318,7 @@ h3.slideshow-zu-portfolio {
     grid-template-columns: 1fr;
   }*/
 
-  .slideshow-desc {
+  .slideshow-rechts {
     max-width: 100%;
     text-align: left;
     max-width: 800px !important;
