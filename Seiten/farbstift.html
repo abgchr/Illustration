@@ -6,18 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Illustration Christina Abgottspon</title>
-  <link rel="icon" type="image/x-icon" href="../Bilder/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/Bilder/favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 
   <script src="libraries/p5.min.js"></script>
   <script src="libraries/p5.sound.min.js"></script>
-  <script src="../sketch.js"></script>
+  <script src="/sketch.js"></script>
 </head>
 
 <header>
-  <h2 class="titel"><a href="../index.html">Christina Abgottspon</a></h2>
-  <h1 class="titel"><a href="../index.html">Illustration</a></h1>
+  <h1 class="titel"><a href="/index.html">Christina
+      <br>Abgottspon</a></h1>
+  <h2 class="titel"><a href="/index.html">Illustration</a></h2>
 
 </header>
 
@@ -25,52 +26,52 @@
 
   <nav class="menu">
     <ul>
-      <li><a href="index.html">Arbeiten</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-      <li><a href="about.html">Über mich</a></li>
+      <li><a href="/index.html">Arbeiten</a></li>
+      <li><a href="/kontakt.html">Kontakt</a></li>
+      <li><a href="/about.html">Über mich</a></li>
     </ul>
   </nav>
 
   <main>
     <div class="slideshow-total">
-      <div>
-        <div class="slideshow-container">
-          <div class="mySlides fade" style="display: block;">
-            <img src="../Bilder/fruechte-farbstift.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Früchte, Farbstift auf Papier</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slideshow-container">
+        <div class="mySlides fade" style="display: block;">
+          <img src="/Bilder/fruechte-farbstift.jpg" width="100%" height="auto" oncontextmenu="return false;">
+          <!--<div class="text">Früchte, Farbstift auf Papier</div>-->
         </div>
 
-        <div style="text-align:center">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots-container">
           <span class="dot" onclick="currentSlide(1)"></span>
         </div>
       </div>
+
       <div class="slideshow-desc">
-        <h3>Farbstift</h3>
-        <p> Meine ersten Zeichnungen fertige ich mir Farbstift an. Auch Aquarellmalereien lassen sich mit Farbstift
-          nachbearbeiten.
-        </p>
-        <h3 class="slideshow-zu-portfolio"><a href="../index.html">Zurück zu den Arbeiten</h3>
+        <div class="slide-desc" id="desc-1" style="display: block;">
+          <h3>Farbstift</h3>
+          <h4>Früchte und Gemüse</h4>
+          <p> Meine ersten Zeichnungen fertigte ich mit Farbstift an. Auch Aquarellmalereien lassen sich mit Farbstift
+            nachbearbeiten.
+            <br>
+            <br>
+            Farbtift auf Papier<br>
+          </p>
+          <h3 class="slideshow-zu-portfolio"><a href="/index.html">Zurück zu den Arbeiten</a></h3>
+        </div>
       </div>
     </div>
   </main>
 
-
-
-  <footer>
-    <div class="footer">
-      <div class="footer-links">
-        <p><a href="../impressum.html">Impressum</a>
-        <p><a href="../datenschutz.html">Datenschutz</a>
-        </p>
-      </div>
-      <div class="footer-rechts">© 2024 Christina Abgottspon
-        <br><br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Urheberin
-        nicht verwendet oder reproduziert werden.
-      </div>
+  <footer class="footer">
+    <div class="footer-links">
+      <p class="klein"><a href="/impressum.html">Impressum</a></p>
+      <p class="klein"><a href="/datenschutz.html">Datenschutz</a></p>
+    </div>
+    <div class="footer-rechts">© 2025 Christina Abgottspon
+      <br><br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Urheberin
+      nicht verwendet oder reproduziert werden.
     </div>
   </footer>
 </body>

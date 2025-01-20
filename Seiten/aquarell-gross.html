@@ -6,97 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Illustration Christina Abgottspon</title>
-  <link rel="icon" type="image/x-icon" href="../Bilder/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/Bilder/favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
   <script src="libraries/p5.min.js"></script>
   <script src="libraries/p5.sound.min.js"></script>
-  <script src="../sketch.js"></script>
+  <script src="/sketch.js"></script>
 </head>
 
 <header>
-  <h2 class="titel"><a href="../index.html">Christina Abgottspon</a></h2>
-  <h1 class="titel"><a href="../index.html">Illustration</a></h1>
+  <h1 class="titel"><a href="/index.html">Christina
+      <br>Abgottspon</a></h1>
+  <h2 class="titel"><a href="/index.html">Illustration</a></h2>
 </header>
 
 <body>
   <nav class="menu">
     <ul>
-      <li><a href="../about.html">Über mich</a></li>
-      <li><a href="../index.html">Arbeiten</a></li>
-      <li><a href="../kontakt.html">Kontakt</a></li>
+      <li><a href="/about.html">Über mich</a></li>
+      <li><a href="/index.html">Arbeiten</a></li>
+      <li><a href="/kontakt.html">Kontakt</a></li>
     </ul>
   </nav>
 
   <main>
     <div class="slideshow-total">
-      <div>
-        <div class="slideshow-container">
-          <div class="mySlides fade" style="display: block;">
-            <img src="../Bilder/wald.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Wald, Aquarell auf Papier</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../Bilder/koerbe.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Körbe, Aquarell auf Papier</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../Bilder/strand.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Strand, Aquarell auf Papier</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../Bilder/nebelmeer.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Nebelmeer, Aquarell auf Papier</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../Bilder/eisberg.jpg" width="100%" height="auto" oncontextmenu="return false;">
-            <div class="text">Eisberg, Aquarell auf Papier</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slideshow-container">
+        <div class="mySlides fade" style="display: block;">
+          <img src="/Bilder/wald.jpg" width="100%" height="auto" oncontextmenu="return false;">
+          <!--<div class="text">Wald, Aquarell auf Papier</div>-->
         </div>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="mySlides fade">
+          <img src="/Bilder/koerbe.jpg" width="100%" height="auto" oncontextmenu="return false;">
+          <!--<div class="text">Körbe, Aquarell auf Papier</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../Bilder/strand.jpg" width="100%" height="auto" oncontextmenu="return false;">
+          <!--<div class="text">Strand, Aquarell auf Papier</div>-->
+        </div>
+
+        <!--<div class="mySlides fade">
+            <img src="../Bilder/nebelmeer.jpg" width="100%" height="auto" oncontextmenu="return false;">
+            <div class="text">Nebelmeer, Aquarell auf Papier</div>
+          </div>-->
+
+        <div class="mySlides fade">
+          <img src="/Bilder/eisberg.jpg" width="100%" height="auto" oncontextmenu="return false;">
+          <!--<div class="text">Eisberg, Aquarell auf Papier</div>-->
+        </div>
+
+        <!--<div class="mySlides fade">
+            <img src="../Bilder/wueste.jpg" width="100%" height="auto" oncontextmenu="return false;">
+            <div class="text">Wüste, Aquarell auf Papier</div>
+          </div>-->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots-container">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
           <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </div>
 
       <div class="slideshow-desc">
-        <h3>Aquarell Landschaften</h3>
-        <p class="beschreibung">Die grossflächigen Aquarelle sind mehr als Kunst als als Illustration zu verstehen. Entstanden sind die
-          Aquarelle im Schwerpunktfach Bildnerisches Gestalten während meiner Zeit am Kollegium in Brig.
-        
-        </p>
-        <h3 class="slideshow-zu-portfolio"><a href="../index.html">Zurück zu den Arbeiten</a></h3>
+        <div class="slide-desc" id="desc-1" style="display: block;">
+          <h3>Aquarell Landschaften</h3>
+          <h4>Wald</h4>
+          <p class="beschreibung">Die grossflächigen Aquarelle sind mehr als Kunst als als Illustration zu verstehen.
+            Entstanden sind die
+            Aquarelle im Schwerpunktfach Bildnerisches Gestalten während meiner Zeit am Kollegium in Brig.
+          <br>
+        <br></p>
+          <p class="klein">
+            Aquarell auf Papier<br>
+            650x500mm
+          </p>
+          <h3 class="slideshow-zu-portfolio"><a href="../index.html">Zurück zu den Arbeiten</a></h3>
+        </div>
+
+        <div class="slide-desc" id="desc-2">
+          <h3>Aquarell Landschaften</h3>
+          <h4>Körbe</h4>
+          <p>
+            Die grossflächigen Aquarelle sind mehr als Kunst als als Illustration zu verstehen.
+            Entstanden sind die
+            Aquarelle im Schwerpunktfach Bildnerisches Gestalten während meiner Zeit am Kollegium in Brig.
+            <br>
+            <br>
+            Aquarell auf Papier<br>
+            650x500mm
+          </p>
+          <h3 class="slideshow-zu-portfolio"><a href="/index.html">Zurück zu den Arbeiten</a></h3>
+        </div>
+
+        <div class="slide-desc" id="desc-3">
+          <h3>Aquarell Landschaften</h3>
+          <h4>Strand</h4>
+          <p>
+            Die grossflächigen Aquarelle sind mehr als Kunst als als Illustration zu verstehen.
+            Entstanden sind die
+            Aquarelle im Schwerpunktfach Bildnerisches Gestalten während meiner Zeit am Kollegium in Brig.
+            <br>
+            <br>
+            Aquarell auf Papier<br>
+            650x500mm
+          </p>
+          <h3 class="slideshow-zu-portfolio"><a href="/index.html">Zurück zu den Arbeiten</a></h3>
+        </div>
+
+        <div class="slide-desc" id="desc-4">
+          <h3>Aquarell Landschaften</h3>
+          <h4>Eisberg</h4>
+          <p>
+            Die grossflächigen Aquarelle sind mehr als Kunst als als Illustration zu verstehen.
+            Entstanden sind die
+            Aquarelle im Schwerpunktfach Bildnerisches Gestalten während meiner Zeit am Kollegium in Brig.
+            <br>
+            <br>
+            Aquarell auf Papier<br>
+            650x500mm
+          </p>
+          <h3 class="slideshow-zu-portfolio"><a href="/index.html">Zurück zu den Arbeiten</a></h3>
+        </div>
       </div>
     </div>
   </main>
 
-
-
-  <footer>
-    <div class="footer">
-      <div class="footer-links">
-        <p><a href="../impressum.html">Impressum</a>
-        <p><a href="../datenschutz.html">Datenschutz</a>
-        </p>
-      </div>
-      <div class="footer-rechts">© 2024 Christina Abgottspon
-        <br><br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Urheberin
-        nicht verwendet oder reproduziert werden.
-      </div>
+  <footer class="footer">
+    <div class="footer-links">
+      <p class="klein"><a href="/impressum.html">Impressum</a></p>
+      <p class="klein"><a href="/datenschutz.html">Datenschutz</a></p>
+    </div>
+    <div class="footer-rechts">© 2025 Christina Abgottspon
+      <br><br>Alle Bilder auf dieser Website sind urheberrechtlich geschützt und dürfen ohne Erlaubnis der Urheberin
+      nicht verwendet oder reproduziert werden.
     </div>
   </footer>
 </body>
