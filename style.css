@@ -325,7 +325,7 @@ h3.slideshow-zu-portfolio {
     grid-template-columns: 1fr;
   }
 
-  .slideshow-container img {
+  .slideshow-links img {
     width: 100%;
     height: auto;
   }
