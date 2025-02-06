@@ -64,8 +64,6 @@ body {
   src: url(Fonts/linux_libertine/LinLibertine_RB.ttf)
 }
 
-
-
 h1,
 h2,
 h3,
@@ -75,11 +73,9 @@ a {
   text-decoration: none;
 }
 
-
 h1,
 h2 {
   text-align: center;
-  /*text-transform: uppercase;*/
   line-height: 1rem;
   padding: 0;
   margin: 0;
@@ -88,9 +84,8 @@ h2 {
 h1 {
   font-size: 1.6rem;
   font-family: CreatoDisplay-Bold;
-  line-height: 1.rem;
+  line-height: 1rem;
   letter-spacing: 0.2px;
-
 }
 
 h2 {
@@ -145,9 +140,9 @@ table {
 /*HEADER, MAIN; FOOTER*/
 
 header {
-  padding: 1rem;
+  padding: 1.3rem 0;
   margin: 0;
-  padding-top: 1.6rem;
+  padding-bottom: 0rem;
 }
 
 main,
@@ -215,9 +210,6 @@ nav {
   margin: 0;
   padding: 0.4rem 0.8rem;
   display: inline-block;
-  
-  
-  /*transition: background-color 0.3s ease, color 0.3s ease;*/
 }
 
 .menu li {
@@ -226,7 +218,7 @@ nav {
   background-color: var(--farbe1);
   border-radius: 50px;
   border: 0.08rem solid var(--farbe3);
-
+margin-top: 0.75rem;
 }
 
 .menu a:hover {
@@ -451,18 +443,19 @@ nav {
 }
 
 a.back {
-  background-color: var(--farbe1);
+  background-color: var(--farbe3);
   border-color: none;
   border: 0.08rem solid var(--farbe3);
   border-radius: 50px;
   padding: 0.4rem 0.8rem;
-  font-family: CreatoDisplay-Regular;
+  font-family: CreatoDisplay-Bold;
   font-size: 1rem;
-  
-}
-a.back:hover{
-  background-color: var(--farbe3);
   color: var(--farbe1);
+}
+
+a.back:hover{
+  background-color: var(--farbe1);
+  color: var(--farbe3);
 }
 
 p.klein {
@@ -493,7 +486,7 @@ line-height: 1.5rem;
 /*KONTAKTFORMULAR*/
 
 h3.kontakt {
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
 }
 
 .kontakt-total {
@@ -528,16 +521,15 @@ h3.kontakt {
 .kontaktfeld {
   width: 100%;
   max-width: 800px;
-  height: 50px;
+  height: 3.5rem;
   border: 0.08rem solid var(--farbe3);
   outline: none;
-  padding-left: 25px;
+  padding: 0.4rem 1.2rem;
   background-color: var(--farbe1);
   border-radius: 50px;
   font-family: CreatoDisplay-Regular;
   font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0.3rem 0;
 }
 
 .formular textarea {
@@ -562,18 +554,17 @@ input.kontaktfeld:focus {
 }
 
 .formular button {
-  padding: 15px 30px;
-  font-size: 16px;
+  padding: 0.4rem 1.2rem;
   color: var(--farbe1);
-  gap: 10px;
+  /*gap: 10px;*/
   border: none;
   border-radius: 50px;
   background: var(--farbe3);
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 0.5px solid var(--farbe3);
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
   border: 0.08rem solid var(--farbe3);
+  height: 2.5rem;
 }
 
 .formular button:hover {
@@ -707,7 +698,6 @@ div.footer-rechts {
   /*line-height: 1rem;*/
   letter-spacing: 0.2px;
 }
-
 
 @media (max-width: 800px) {
   footer {
