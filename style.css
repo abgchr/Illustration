@@ -198,7 +198,7 @@ nav {
   margin: 0;
   width: 100%;
   justify-content: center;
-  
+
 }
 
 .menu a {
@@ -218,7 +218,7 @@ nav {
   background-color: var(--farbe1);
   border-radius: 50px;
   border: 0.08rem solid var(--farbe3);
-margin-top: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .menu a:hover {
@@ -235,8 +235,8 @@ margin-top: 0.75rem;
   background-color: var(--farbe2);
   margin-bottom: 0.8rem;
   transition: opacity 0.3s ease;
-  padding: 0px;
-  border-radius: 10px;
+  padding: 0;
+  border-radius: 1rem;
 }
 
 .gallery:hover {
@@ -246,7 +246,7 @@ margin-top: 0.75rem;
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 0.08rem solid var(--farbe3);
 }
 
@@ -319,11 +319,11 @@ margin-top: 0.75rem;
   margin: auto;
   overflow: hidden;
   max-width: 800px;
-   
+
 }
 
-.slideshow-links img{
-  border-radius: 10px;
+.slideshow-links img {
+  border-radius: 1rem;
   border: 0.08rem solid var(--farbe3);
 }
 
@@ -444,7 +444,6 @@ margin-top: 0.75rem;
 
 a.back {
   background-color: var(--farbe3);
-  border-color: none;
   border: 0.08rem solid var(--farbe3);
   border-radius: 50px;
   padding: 0.4rem 0.8rem;
@@ -453,7 +452,7 @@ a.back {
   color: var(--farbe1);
 }
 
-a.back:hover{
+a.back:hover {
   background-color: var(--farbe1);
   color: var(--farbe3);
 }
@@ -461,9 +460,9 @@ a.back:hover{
 p.klein {
   font-family: CreatoDisplay-Regular;
   font-size: 1rem;
-padding-bottom: 2rem;
-letter-spacing: 0.5px;
-line-height: 1.5rem;
+  padding-bottom: 2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
 }
 
 /* Fading animation */
@@ -514,8 +513,9 @@ h3.kontakt {
 .bild-kontakt {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 1rem;
   max-width: 800px;
+  border: 0.08rem solid var(--farbe3);
 }
 
 .kontaktfeld {
@@ -565,6 +565,7 @@ input.kontaktfeld:focus {
   margin-bottom: 1rem;
   border: 0.08rem solid var(--farbe3);
   height: 2.5rem;
+  font-family: Creatodisplay-Bold;
 }
 
 .formular button:hover {
@@ -665,7 +666,7 @@ table {
 }
 
 table tr:nth-child(2n) td {
-  padding-bottom: 0.8rem; 
+  padding-bottom: 0.8rem;
 }
 
 table td:nth-child(1) {
