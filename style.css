@@ -206,7 +206,7 @@ nav {
   text-decoration: none;
   color: var(--farbe3);
   /*text-transform: uppercase;*/
-  font-size: rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0.4rem 0.8rem;
   display: inline-block;
